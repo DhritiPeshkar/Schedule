@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AAFBA8792E6379AC00B97B95 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = AAFBA8782E6379AC00B97B95 /* OpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AAFBA8692E63796000B97B95 /* ScheduleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScheduleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFBA8792E6379AC00B97B95 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = ScheduleApp;
 			packageProductDependencies = (
+				AAFBA8782E6379AC00B97B95 /* OpenAI */,
 			);
 			productName = ScheduleApp;
 			productReference = AAFBA8692E63796000B97B95 /* ScheduleApp.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = AAFBA8602E63796000B97B95;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AAFBA8772E6379AC00B97B95 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAFBA86A2E63796000B97B95 /* Products */;
 			projectDirPath = "";
@@ -320,6 +329,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAFBA8772E6379AC00B97B95 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAFBA8782E6379AC00B97B95 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAFBA8772E6379AC00B97B95 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAFBA8612E63796000B97B95 /* Project object */;
 }
